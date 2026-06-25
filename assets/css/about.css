@@ -1,0 +1,17 @@
+.about-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: bold;
+    color: #54EC4F;
+    margin-bottom: 20px;
+}
+.about-data{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    text-align: center;
+    line-height: 1.6;
+}

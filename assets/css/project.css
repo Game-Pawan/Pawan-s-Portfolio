@@ -1,0 +1,105 @@
+.project-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: bold;
+    color: #54EC4F;
+    margin-bottom: 30px;
+}
+
+.project-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-1st,
+.project-2nd,
+.project-3rd,
+.project-4rt,
+.project-5th {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    width: 100% !important;
+    /* Overrides previous inline width tracking */
+}
+
+.project-data img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.project-name {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.project-github-demo {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-github-demo button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.project-github-demo button:hover {
+    background: #54EC4F;
+    color: white;
+    border-color: #54EC4F;
+}
+
+.project-github-demo {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-github-demo a {
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-demo {
+    background: #28a745;
+}
+
+.btn-demo:hover {
+    background: #218838;
+}
+
+.btn-github {
+    background: #24292e;
+}
+
+.btn-github:hover {
+    background: #000;
+}

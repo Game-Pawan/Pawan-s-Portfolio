@@ -1,0 +1,55 @@
+.services {
+    text-align: center;
+}
+.services section{
+    height: 20px;
+    width: 40%;
+    background-color: aquamarine;
+}
+.service-logo{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.service-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #54EC4F;
+    font-size: 40px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: -2px;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.services-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

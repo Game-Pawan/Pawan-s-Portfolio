@@ -1,0 +1,128 @@
+/* --- Hero Container Layout --- */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 50px);
+    /* Fills screen height minus navbar */
+    padding: 40px 8%;
+    gap: 40px;
+    background: #ffffff;
+}
+
+/* --- Left Text Panel Layout --- */
+.home-name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Aligns all text and buttons neatly to the left */
+    gap: 25px;
+    /* Creates consistent spacing between title, socials, and resume */
+}
+
+.home-name h1 {
+    /* min mobile size: 1.5rem, scales with screen, max desktop size: 2rem */
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #111;
+    margin: 0;
+}
+
+/* Container directly holding social-icon and resume blocks */
+.home-name>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+/* --- Social Icons Row --- */
+.social-icon {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icon div a img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.social-icon div a:hover img {
+    transform: scale(1.1);
+}
+
+/* --- Fixed Resume Button Layout --- */
+.resume {
+    display: inline-block;
+    /* Prevents it from breaking or taking up 100% full width */
+    width: auto;
+    /* Overrides the stretching bug seen in your screenshot */
+}
+
+.resume a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #54EC4F;
+    color: #000000;
+    padding: 12px 28px;
+    border-radius: 30px;
+    /* Gives it a modern rounded pill look */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(84, 236, 79, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume a img {
+    width: 18px;
+    height: 18px;
+}
+
+.resume a:hover {
+    background-color: #43d13e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(84, 236, 79, 0.4);
+}
+
+/* --- Right Image Panel Layout --- */
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5% 5% 5% 5%;
+    /* Adjust to match your curved profile frame crop */
+    max-height: 450px;
+    object-fit: cover;
+}
+
+/* --- Responsive Layout for Mobile Devices --- */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        /* Puts text below picture on small screens */
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .home-name {
+        align-items: center;
+    }
+
+    .home-name>div {
+        align-items: center;
+    }
+}

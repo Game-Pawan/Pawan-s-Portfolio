@@ -1,0 +1,82 @@
+.skills {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Removed height: 500px to allow unlimited vertical space */
+}
+
+.skills-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #54EC4F;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.skills-body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: auto; /* Overrides original fixed 450px layout */
+}
+
+/* Universal row handler converting smoothly into a column layout if space is tight */
+.languages, 
+.framework, 
+.Frontend, 
+.database, 
+.testing, 
+.tools, 
+.etc {
+    display: flex;
+    flex-direction: column; /* Stack tag rows under header titles naturally */
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: auto; /* Removes height: 64px bounds */
+}
+
+.languges-word, 
+.framework-name, 
+.Frontend-name, 
+.database-name, 
+.testing-name, 
+.tools-name {
+    width: auto; /* Drops fixed width: 25% allocations */
+    font-weight: bold;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.languages-content,
+.framework-content,
+.Frontend-content,
+.database-content,
+.testing-content,
+.tools-content,
+.etc-content {
+    width: 100%;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap; /* Lets list nodes drop down if lines exceed viewport boundaries */
+    list-style: none;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 8px 16px;
+    background-color: white;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
