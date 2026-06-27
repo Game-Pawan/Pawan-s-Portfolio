@@ -55,3 +55,30 @@ contactForm.addEventListener("submit", function (e) {
         });
 
 });
+
+
+
+
+
+
+const modal = document.getElementById("certificateModal");
+const preview = document.getElementById("certificatePreview");
+const closeBtn = document.querySelector(".close-modal");
+
+function openCertificate(image) {
+
+    console.log(image);   // Helps verify the path
+
+    preview.src = image;
+    modal.style.display = "flex";
+}
+
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});

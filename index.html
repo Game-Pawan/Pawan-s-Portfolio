@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets\css\project.css">
     <link rel="stylesheet" href="assets\css\journy.css">
     <link rel="stylesheet" href="assets\css\skills.css">
+    <link rel="stylesheet" href="assets\css\certifications.css">
     <link rel="stylesheet" href="assets\css\services.css">
     <link rel="stylesheet" href="assets\css\contact.css">
     <link rel="stylesheet" href="assets\css\footer.css">
@@ -36,6 +37,7 @@
                 <li><a href="#project">Project</a></li>
                 <li><a href="#journy">Education & Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certification</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -320,7 +322,84 @@
     </section>
 
     <hr>
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
 
+        <div class="certifications-head">
+            <h2>Certifications</h2>
+        </div>
+
+        <div class="certifications-container">
+
+            <div class="certificate-card">
+
+                <div class="certificate-img-box">
+                    <img src="" class="certificate-image">
+                </div>
+
+                <div class="certificate-details">
+                    <h3>Java Full Stack Development</h3>
+                    <p>QSpider, Pune</p>
+                    <span>2025-2026</span>
+                </div>
+
+                <button class="certificate-btn" onclick="openCertificate('#')">
+                    Certificate Soon
+                </button>
+
+            </div>
+
+            <div class="certificate-card">
+
+                <div class="certificate-img-box">
+                    <img src="assets\certifications\Certificate (Manual Testing).jpg.jpeg" class="certificate-image">
+                </div>
+
+                <div class="certificate-details">
+                    <h3>Manual Testing</h3>
+                    <p>QSpider, Pune</p>
+                    <span>2025</span>
+                </div>
+
+                <button class="certificate-btn"
+                    onclick="openCertificate('assets/certifications/Certificate (Manual Testing).jpg.jpeg')">
+                    View Certificate
+                </button>
+
+            </div>
+
+            <div class="certificate-card">
+
+                <div class="certificate-img-box">
+                    <img src="assets/certifications/Certificate (Java Full Stack)Code for success.jpeg"
+                        class="certificate-image">
+                </div>
+
+                <div class="certificate-details">
+                    <h3>Java Full Stack Development</h3>
+                    <p>Code For Success</p>
+                    <span>2024</span>
+                </div>
+
+                <button class="certificate-btn"
+                    onclick="openCertificate('assets/certifications/Certificate (Java Full Stack)Code for success.jpeg')">
+                    View Certificate
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Certificate Modal -->
+        <div id="certificateModal" class="certificate-modal">
+
+            <span class="close-modal">&times;</span>
+
+            <img id="certificatePreview" class="certificate-preview">
+
+        </div>
+    </section>
+    <hr>
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="service-head">
