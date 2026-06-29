@@ -82,3 +82,17 @@ modal.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+
+
+
+
+// Visitor Counter
+fetch("https://api.countapi.xyz/hit/pawan-game/portfolio")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("visitor-count").innerText = data.value;
+    })
+    .catch(error => {
+        console.error(error);
+        document.getElementById("visitor-count").innerText = "--";
+    });
