@@ -1,11 +1,7 @@
 .services {
     text-align: center;
 }
-.services section{
-    height: 20px;
-    width: 40%;
-    background-color: aquamarine;
-}
+
 .service-logo{
     width: 60px;
     height: 60px;

@@ -53,28 +53,6 @@
 
 .project-github-demo {
     display: flex;
-    gap: 10px;
-    margin-top: auto;
-}
-
-.project-github-demo button {
-    flex: 1;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    background: white;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.project-github-demo button:hover {
-    background: #54EC4F;
-    color: white;
-    border-color: #54EC4F;
-}
-
-.project-github-demo {
-    display: flex;
     gap: 15px;
     margin-top: 15px;
 }

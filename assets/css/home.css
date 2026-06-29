@@ -103,8 +103,7 @@
 .home-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 5% 5% 5% 5%;
-    /* Adjust to match your curved profile frame crop */
+    border-radius: 5%;
     max-height: 450px;
     object-fit: cover;
 }

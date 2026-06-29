@@ -92,19 +92,6 @@ nav {
 }
 
 /* ==========================
-   Visitor Counter
-========================== */
-
-.visitor-counter {
-    display: none;
-}
-
-#visitor-count {
-    color: #0b7a00;
-    font-weight: bold;
-}
-
-/* ==========================
    Mobile
 ========================== */
 
@@ -160,38 +147,6 @@ nav {
     .nav-links li a {
 
         font-size: 1.2rem;
-
-    }
-
-    .visitor-counter {
-
-        display: block;
-
-        margin-top: auto;
-
-        width: 100%;
-
-        text-align: center;
-
-        padding: 20px;
-
-        border-top: 1px solid rgba(0,0,0,.2);
-
-        font-size: 18px;
-
-        font-weight: bold;
-
-    }
-
-    #visitor-count {
-
-        display: block;
-
-        margin-top: 8px;
-
-        font-size: 24px;
-
-        color: #0b7a00;
 
     }
 

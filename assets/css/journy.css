@@ -25,59 +25,68 @@
 .journy-body {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Allows stacking on smaller mobile ratios */
+    flex-wrap: wrap;
+    /* Allows stacking on smaller mobile ratios */
     gap: 40px;
     width: 100%;
 }
 
 /* --- Columns: Education & Experience --- */
-.journy-body-edu, 
+.journy-body-edu,
 .journy-body-exp {
     display: flex;
-    flex-direction: row; /* Horizontal alignment for the vertical line + content cards */
+    flex-direction: row;
+    /* Horizontal alignment for the vertical line + content cards */
     flex: 1;
-    min-width: 290px; /* Forces stack when device room runs out */
+    min-width: 290px;
+    /* Forces stack when device room runs out */
     position: relative;
 }
 
 /* --- Clean, Flexible Vertical Timeline Lines --- */
-.journy-body-edu-line, 
+.journy-body-edu-line,
 .journy-body-exp-line {
     width: 4px;
     background-color: #333;
     position: relative;
-    margin-right: 20px; /* Spacing between the line and your cards */
+    margin-right: 20px;
+    /* Spacing between the line and your cards */
     flex-shrink: 0;
-    
+
     /* Clean overrides for original desktop hardcoded offsets */
-    margin-left: 10px !important; 
+    margin-left: 10px !important;
     height: auto !important;
 }
 
 /* --- Content Detail Container blocks --- */
-.journy-body-edu-details, 
+.journy-body-edu-details,
 .journy-body-exp-details {
     display: flex;
     flex-direction: column;
     gap: 25px;
     flex-grow: 1;
-    
+
     /* Overrides the fixed widths causing screen overflows */
-    width: auto !important; 
+    width: auto !important;
     margin-left: 0 !important;
     margin-top: 0 !important;
 }
 
 /* --- Inner Individual Rows --- */
-.degree, .diploma, .qspider, .kiran, .sumago {
+.degree,
+.diploma,
+.qspider,
+.kiran,
+.sumago {
     display: flex;
     width: 100%;
-    height: auto !important; /* Lets content scale gracefully based on text length */
+    height: auto !important;
+    /* Lets content scale gracefully based on text length */
 }
 
 /* --- Individual Info Cards --- */
-.degree-content, 
-.diploma-content, 
+.degree-content,
+.diploma-content,
 .qspider-content {
     width: 100%;
     background: #fdfdfd;
@@ -96,25 +105,46 @@
 }
 
 /* --- Universal Responsive Bullet Dots --- */
-#journy-span {
+.journy-body-edu-line span,
+.journy-body-exp-line span {
     width: 14px;
     height: 14px;
     background-color: #54EC4F;
     border: 3px solid #333;
     border-radius: 50%;
     position: absolute;
-    left: 5px; /* Centers perfectly directly onto your timeline rule line */
+    left: 5px;
+    /* Centers perfectly directly onto your timeline rule line */
     transform: translateY(-50%);
     z-index: 5;
     display: block !important;
 }
 
 /* Clear hardcoded margins on specific dots so they align dynamically */
-.degree-dot  { top: 15%;  margin-top: 0 !important; }
-.diploma-dot { top: 50%;  margin-top: 0 !important; }
-.qspider-dot { top: 15%;  margin-top: 0 !important; }
-.kiran-dot   { top: 51%;  margin-top: 0 !important; }
-.techno-dot  { top: 86%;  margin-top: 0 !important; }
+.degree-dot {
+    top: 15%;
+    margin-top: 0 !important;
+}
+
+.diploma-dot {
+    top: 50%;
+    margin-top: 0 !important;
+}
+
+.qspider-dot {
+    top: 15%;
+    margin-top: 0 !important;
+}
+
+.kiran-dot {
+    top: 51%;
+    margin-top: 0 !important;
+}
+
+.techno-dot {
+    top: 86%;
+    margin-top: 0 !important;
+}
 
 
 /* --- Mobile Ratio Screen Tweaks (Max width 768px) --- */
@@ -124,12 +154,12 @@
         gap: 15px;
         margin-bottom: 25px;
     }
-    
+
     /* Hide the second header on mobile since sections stack cleanly underneath each other */
-    .journy-head div + div {
-        display: none; 
+    .journy-head div+div {
+        display: none;
     }
-    
+
     /* Insert a mobile-only category marker before the Experience block */
     .journy-body-exp::before {
         content: 'Experience';
@@ -140,8 +170,9 @@
         font-weight: bold;
         color: #54EC4F;
     }
-    
+
     .journy-body-exp {
-        margin-top: 50px; /* Gives headroom layout margin for the injected title */
+        margin-top: 50px;
+        /* Gives headroom layout margin for the injected title */
     }
 }
